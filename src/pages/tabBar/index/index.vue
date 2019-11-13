@@ -1,12 +1,11 @@
 <template>
     <div class="content-body">
         <div class="uni-padding-wrap box">
-            <div class="page-section swiper">
+            <div class="page-section">
                 <div class="page-section-spacing">
                     <swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval"
                             :duration="duration">
                         <swiper-item>
-                            <!--<view class="swiper-item uni-bg-red">A</view>-->
                             <image mode="widthFix" class="banner" src="../../../static/food/banner.jpg"></image>
                         </swiper-item>
 
@@ -21,6 +20,27 @@
         <div class="searchBox">
             <input class="input" name="" placeholder="请输入您要搜索的美食"/>
             <icon type="search" size="20" class="btn"/>
+        </div>
+        <div class="four-choose">
+            <div class="four-son wave">
+                <image mode="widthFix" class="icon" src="../../../static/food/icon.jpg"></image>
+                <div class="text-icon">最新推荐</div>
+            </div>
+
+            <div class="four-son wave">
+                <image mode="widthFix" class="icon" src="../../../static/food/icon1.jpg"></image>
+                <div class="text-icon">热门菜谱</div>
+            </div>
+
+            <div class="four-son wave">
+                <image mode="widthFix" class="icon" src="../../../static/food/icon2.jpg"></image>
+                <div class="text-icon">人气菜肴</div>
+            </div>
+
+            <div class="four-son wave">
+                <image mode="widthFix" class="icon" src="../../../static/food/icon3.jpg"></image>
+                <div class="text-icon">优惠券</div>
+            </div>
         </div>
     </div>
 </template>
@@ -41,14 +61,19 @@
 </script>
 
 <style scoped>
-    .box {
+    .box,.page-section,.page-section-spacing {
         width: 100%;
-        /*height: 700px;*/
+        height: 250px;
+        /*background: red;*/
+    }
+    .swiper{
+        width: 100%;
+        height: 100%;
     }
 
     .banner {
         width: 100%;
-        height: 300px;
+        /*height: 300px;*/
     }
 
     .searchBox {
@@ -71,5 +96,30 @@
     }
     .btn{
         margin-left: 10%;
+    }
+    .four-choose{
+        width: 100%;
+        background: rgba(250,250,250,1);
+        padding-bottom: 7px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .four-son{
+        width: 25%;
+        /*background: yellow;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon{
+        width: 60%;
+    }
+    .text-icon{
+        width: 70%;
+        color: #929292;
+        font-size: 15px;
+        text-align: center;
+        line-height: 20px;
     }
 </style>
