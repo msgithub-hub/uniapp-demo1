@@ -71,7 +71,7 @@ form {
 }
 .uni-padding-wrap{
 	width:690upx;
-	padding:0 30upx;
+	/*padding:0 30upx;*/
 }
 .uni-word {
 	text-align: center;
